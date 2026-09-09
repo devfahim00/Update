@@ -3,7 +3,7 @@ version = 1
 
 
 cloudstream {
-    // All of these properties are optional, you can safely remove them
+    // All of these properties are optional, you can safely remove them 
 
     description = ""
     authors = listOf("Jace")
