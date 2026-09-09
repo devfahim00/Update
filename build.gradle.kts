@@ -10,7 +10,8 @@ buildscript {
 
     dependencies {
         classpath("com.android.tools.build:gradle:7.4.2")
-        classpath("com.github.recloudstream:gradle:master-SNAPSHOT")
+        // Use specific version instead of master-SNAPSHOT
+        classpath("com.github.recloudstream:gradle:3.0.0")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10")
     }
 }
@@ -66,8 +67,8 @@ subprojects {
         val apk by configurations
         val implementation by configurations
 
-        // Stubs for all Cloudstream classes
-        apk("com.lagradost:cloudstream3:pre-release")
+        // Use specific version
+        apk("com.lagradost:cloudstream3:3.0.0")
 
         implementation(kotlin("stdlib"))
         implementation("com.github.Blatzar:NiceHttp:0.3.4")
